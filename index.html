@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>piuuSheila</title>
 
+    <!-- connect to css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- connect to js -->
+    <script src="js/script.js"></script>
 
     <!-- ini CSS internal -->>
-     <style>
+    <style>
         p {
             background-color: aquamarine;
-        } 
-     </style>
-
-     <link rel="stylesheet" href="css/styles.css">
+        }
+    </style>
 
 </head>
 
@@ -26,15 +28,24 @@
 
     <p>bjhbhhhhhhhhhhhhhhhhhhhjjjjjjjjjjj</p>
 
+    <input id="nama-depan" nama="nama-depan" placeholder="Masukkan nama anda">
+    <input id="nama-belakang" nama="nama-belakang" placeholder="Masukkan nama belakang anda">
+
     <span> Made by Shei</span>
 
-<button onclick="clickHere()">Click here</button>
-<script>
-    function clickHere(){
-        alert('Selamat anda sukses!')
-    }
-</script>
+    <button onclick="clickHere()">Click here</button>
+    <script>
+        function clickHere() {
+            let namaDepan = document.getElementById('nama-depan').value;
+            let namaBelakang = document.getElementById('nama-belakang').value;
+            let namaLengkap = namaDepan + namaBelakang
+            console.log(namaLengkap);
+        // }
+        // function clickHere() {
+        //     alert('Selamat anda sukses!')
+        }
+    </script>
 
-</body> 
+</body>
 
 </html>
